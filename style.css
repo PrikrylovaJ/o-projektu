@@ -26,3 +26,30 @@ body {
   border-radius: 15px;
   height: 550px;
 }
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.vystavy,
+.kurzy,
+.prostor {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  width: 250px;
+  height: 250px;
+  background-color: #fcfcfc;
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  border-radius: 15px;
+  margin-bottom: 5%;
+}

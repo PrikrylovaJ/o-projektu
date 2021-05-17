@@ -10,11 +10,12 @@ html {
 
 body {
   background-color: rgb(233, 184, 192);
-    min-height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
-.container {
+.container--vystavy,
+.container--kurzy {
   max-width: 320px;
   width: 100%;
   margin: 30px auto;
@@ -25,4 +26,3 @@ body {
   border-radius: 15px;
   height: 550px;
 }
-

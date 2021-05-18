@@ -12,56 +12,150 @@ body {
   background-color: rgb(233, 184, 192);
   min-height: 100vh;
   margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.container--homepage,
 .container--vystavy,
 .container--kurzy {
   max-width: 320px;
   width: 100%;
   margin: 30px auto;
-  /* margin-left: auto;
-  margin-right: auto; */
   background-color: #fcfcfc;
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   border-radius: 15px;
-  height: 550px;
+  height: 1000px;
 }
 
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   margin-top: 10%;
+  padding: 0 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  padding: 3rem;
 }
 
 .components {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 2rem;
 }
 
+.components a {
+  padding-top: 1.8rem;
+  margin-top: 5rem;
+}
 .vystavy,
 .kurzy,
 .prostor {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: bold;
-  font-size: 30px;
-  width: 250px;
-  height: 250px;
+  font-size: 28px;
+  width: 200px;
+  height: 100px;
   background-color: #fcfcfc;
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   border-radius: 15px;
-  margin-bottom: 5%;
 }
 
-@media screen and (min-width: 850px) {
-  h1 {
-    font-size: 50px;
+.pozadi {
+  height: 250px;
+  background-image: url(./img/Jackson01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 850px) {
+  .container--vystavy,
+  .container--homepage {
+    max-width: 750px;
   }
+
+  .exhibition-container {
+    display: flex;
+  }
+
   .components {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+}
+
+/* ------------------Navigace----------------- */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navigation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navigation-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav {
+  width: 5rem;
+  padding: 1rem;
+  text-align: center;
+}
+.navigation-button {
+  background-image: url('img/Navigace/iconmonstr-menu-thin.png');
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 10px;
+}
+
+.navigation-closed {
+  display: none;
+}
+
+/* -------------------Výstavy---------------- */
+
+/*
+.exhibition-container {
+  tady musi neco byt, jinak to haze chybu, dala jsem to do komentu
+}
+*/
+
+.exhibiton-card {
+  max-width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(209, 206, 206);
+}
+
+.exhibition-card__author {
+  display: block;
 }

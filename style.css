@@ -45,22 +45,28 @@ h1 {
 .prostor {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: bold;
-  font-size: 30px;
-  width: 250px;
-  height: 250px;
+  font-size: 28px;
+  width: 200px;
+  height: 100px;
   background-color: #fcfcfc;
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   border-radius: 15px;
   margin-bottom: 5%;
 }
 
-@media screen and (min-width: 850px) {
+@media (min-width: 850px) {
+  .container--vystavy,
+  .container--homepage {
+    max-width: 700px;
+  }
+
   .components {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
+  } 
+  
 }
 
 /* ------------------Navigace----------------- */
@@ -122,3 +128,4 @@ a {
 .exhibition-card__author {
   display: block;
 }
+

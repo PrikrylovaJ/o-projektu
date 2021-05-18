@@ -111,4 +111,14 @@ a {
   display: none;
 }
 
+/* -------------------Výstavy---------------- */
+.exhibiton-card {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(209, 206, 206);
+  margin-bottom: 10px;
+}
 
+.exhibition-card__author {
+  display: block;
+}

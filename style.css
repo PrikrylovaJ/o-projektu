@@ -57,7 +57,11 @@ h1 {
 @media (min-width: 850px) {
   .container--vystavy,
   .container--homepage {
-    max-width: 700px;
+    max-width: 750px;
+  }
+
+  .exhibition-container {
+    display: flex;
   }
 
   .components {
@@ -118,11 +122,15 @@ a {
 }
 
 /* -------------------Výstavy---------------- */
+
+.exhibition-container {
+
+}
 .exhibiton-card {
+  max-width: 280px;
   margin-left: 20px;
   margin-right: 20px;
   border: 1px solid rgb(209, 206, 206);
-  margin-bottom: 10px;
 }
 
 .exhibition-card__author {

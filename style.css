@@ -24,7 +24,8 @@ body {
   background-color: #fcfcfc;
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   border-radius: 15px;
-  height: 1000px;
+  /* height: 1000px; */
+  min-height: 100vh;
 }
 
 h1 {
@@ -72,25 +73,7 @@ p {
   height: 250px;
   background-image: url(./img/Jackson01.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (min-width: 850px) {
-  .container--vystavy,
-  .container--homepage {
-    max-width: 750px;
-  }
-
-  .exhibition-container {
-    display: flex;
-  }
-
-  .components {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  background-position: center;;
 }
 
 /* ------------------Navigace----------------- */
@@ -143,19 +126,60 @@ a {
 
 /* -------------------Výstavy---------------- */
 
-/*
 .exhibition-container {
-  tady musi neco byt, jinak to haze chybu, dala jsem to do komentu
+  margin-right: 10px;
+  margin-left: 10px;
 }
-*/
 
 .exhibiton-card {
   max-width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   border: 1px solid rgb(209, 206, 206);
 }
 
 .exhibition-card__author {
-  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.exhibition-card__author:hover,
+.exhibition-card__author:focus {
+  color:rgb(186, 43, 67)
+}
+
+
+.exhibition-card__title {
+  padding: 0;
+}
+
+.exhibition-card__date {
+  padding: 0;
+}
+
+.exhibition-card__place {
+  padding: 0;
+}
+
+/* -------------------------------------------------- */
+
+@media (min-width: 850px) {
+  .container--vystavy,
+  .container--homepage {
+    max-width: 750px;
+  }
+
+  .exhibition-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .components {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

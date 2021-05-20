@@ -35,7 +35,7 @@ h1 {
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   margin-top: 10%;
-  padding: 0 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 h2 {
@@ -170,17 +170,28 @@ a {
 .about-container {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .about-card {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid rgb(223, 115, 115);
+  margin-bottom: 15px;
+  padding: 20px;
 }
 
 .about-card__photo {
   border-radius: 50%;
+  padding: 20px;
+}
+
+.about-card__info {
+  padding: 24px;
 }
 
 /* -------------------------------------------------- */
@@ -193,7 +204,12 @@ a {
   }
 
   .about-container {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
+  }
+
+  .about-card {
+    width: 300px;
   }
 
   .components {

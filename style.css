@@ -130,14 +130,14 @@ a {
 /* -------------------Výstavy---------------- */
 
 .exhibition-container {
-  margin-right: 10px;
-  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .exhibiton-card {
-  max-width: 280px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 280px; 
   margin-bottom: 20px;
   border: 1px solid rgb(209, 206, 206);
 }
@@ -145,6 +145,13 @@ a {
 .exhibition-card__author {
   font-size: 20px;
   margin-top: 10px;
+  margin-left: 5px;
+}
+
+.exhibition-card__title,
+.exhibition-card__date,
+.exhibition-card__place {
+  margin: 5px;
 }
 
 .exhibition-card__author:hover,
@@ -205,6 +212,10 @@ a {
 
   .about-container {
     /* flex-wrap: nowrap; */
+    justify-content: space-around;
+  }
+
+  .exhibition-container {
     justify-content: space-around;
   }
 

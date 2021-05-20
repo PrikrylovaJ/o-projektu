@@ -20,7 +20,8 @@ body {
 .container--homepage,
 .container--vystavy,
 .container--contact,
-.container--kurzy {
+.container--kurzy,
+.container--contacts {
   max-width: 320px;
   width: 100%;
   margin: 30px auto;
@@ -205,6 +206,42 @@ a {
 
 .about-card__info {
   padding: 24px;
+}
+
+/* -----------------------Kontakty------------------- */
+
+.container--contacts {
+  max-width: 700px;
+}
+
+.contacts-card__container {
+  display: flex;
+}
+
+.contacts-card__photo {
+  padding-left: 2rem;
+}
+
+.contacts-card__adress {
+  padding-left: 2rem;
+}
+
+.contacts-card__container2 {
+  display: flex;
+}
+.contacts-card__phone,
+.contacts-card__email {
+  padding: 3rem;
+  display: flex;
+}
+
+.phones,
+.emails {
+  padding-left: 1rem;
+}
+
+.email {
+  margin-top: 1rem;
 }
 
 /* -------------------------------------------------- */

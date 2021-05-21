@@ -246,6 +246,12 @@ a {
 
 /* -------------------------------------------------- */
 
+@media (max-width: 600px) {
+  .contacts-card__container2 {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 849px) {
   .pozadi {
     height: 600px;
